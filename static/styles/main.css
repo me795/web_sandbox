@@ -1,0 +1,83 @@
+* {
+    font-family: "Times New Roman", serif;
+    font-size: 14px;
+}
+
+input, select {
+    font-family: "Verdana", serif;
+}
+
+body {
+    padding: 10px;
+}
+
+h1 {
+    font-size: 20px;
+    margin: 20px 5px;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 80%;
+    border: 1px solid #5189B8;
+}
+
+thead th:nth-child(1) {
+    width: 40%;
+}
+
+thead th:nth-child(2) {
+    width: 18%;
+}
+
+thead th:nth-child(3) {
+    width: 18%;
+}
+
+thead th:nth-child(4) {
+    width: 15%;
+}
+
+tr > td,th {
+    text-align: left;
+    border: 1px solid #5189B8;
+
+}
+
+.student_form {
+    border: 1px solid #5189B8;
+    width: 500px;
+    margin: 5px;
+}
+
+.student_form {
+    padding: 5px;
+}
+
+.student_form > div {
+    padding: 5px;
+}
+
+.student_form_label{
+    display: inline-block;
+    width: 170px;
+    text-align: left;
+}
+
+.student_form_input, .student_form_select{
+    border: 1px solid #5189B8;
+    width: 300px;
+}
+
+.student_form_select {
+    width: 306px;
+}
+
+.student_form_button{
+    margin: 20px 5px;
+}
+
+input.error {
+    border-color: red;
+}

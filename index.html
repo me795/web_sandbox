@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>web sandbox</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="stylesheet" type="text/css" href="static/styles/main.css?v=1"/>
+    <script type="text/javascript" src="static/scripts/main.js?v=1"></script>
+</head>
+<body>
+<h1>Форма добавления информации о студенте</h1>
+<div class="student_form">
+    <div>
+        <label for="student_form_input_name" class="student_form_label">Имя студента:</label>
+        <input id="student_form_input_name" class="student_form_input"/>
+    </div>
+    <div>
+        <label for="student_form_input_birthday" class="student_form_label">Дата рождения:</label>
+        <input id="student_form_input_birthday" type="date" class="student_form_input"/>
+    </div>
+    <div>
+        <label for="student_form_select_gender" class="student_form_label">Пол:</label>
+        <select id="student_form_select_gender" class="student_form_select">
+            <option selected value="мужчина">мужчина</option>
+            <option value="женщина">женщина</option>
+        </select>
+    </div>
+    <button class="student_form_button" onclick="addButtonHandler()">Добавить</button>
+</div>
+<h1>Таблица студентов</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Имя студента</th>
+        <th>Пол</th>
+        <th>Дата рождения</th>
+        <th>Возраст</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody id="table_body">
+    <tr class="table_student_record">
+        <td>Иван Ограномович Штейн</td>
+        <td>мужчина</td>
+        <td>12.06.1974</td>
+        <td class="student_age">47</td>
+        <td><a onclick="removeButtonHandler(this)" href="#">удалить</a></td>
+    </tr>
+    <tr class="table_student_record">
+        <td>Гертруда Анатольевна Иванова</td>
+        <td>женщина</td>
+        <td>01.01.1987</td>
+        <td class="student_age">34</td>
+        <td><a onclick="removeButtonHandler(this)" href="#">удалить</a></td>
+    </tr>
+    <tr class="table_student_record">
+        <td>Воланд Игоревич Муха</td>
+        <td>мужчина</td>
+        <td>27.04.1974</td>
+        <td class="student_age">47</td>
+        <td><a onclick="removeButtonHandler(this)" href="#">удалить</a></td>
+    </tr>
+    <tr>
+        <td colspan="5">&nbsp;</td>
+    </tr>
+    <tr>
+        <td colspan="3">Средний возраст студентов</td>
+        <td id="average_age"></td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
